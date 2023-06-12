@@ -1,6 +1,6 @@
-import requests
+#import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 # startas genom att skriva: streamlit run hemsida.py 
 # se till att vara i rätt filmapp 
