@@ -7,11 +7,11 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Min hemsida", page_icon=":globe_with_meridians:", layout="wide")
 
-def load_lottieurl(url):
+"""def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
         return None
-    return r.json()
+    return r.json()"""
 
 # Use CSS
 def local_css(file_name):
@@ -21,8 +21,8 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # lottiefiles
-lottie_stock = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_3kjzsbjv.json")
-lottie_energy = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_v0qottlc.json")
+#lottie_stock = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_3kjzsbjv.json")
+#lottie_energy = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_v0qottlc.json")
 
 # Första rubrik
 with st.container():
@@ -41,12 +41,12 @@ with st.container():
         st.subheader("[Electricity maps](https://app.electricitymaps.com/map)")
         #st.write("##")
         st.subheader("[Avanza](https://www.avanza.se/hem/hem.html)")
-    
+    """
     with middle_column:
         st_lottie(lottie_energy, height=300, key="energy")
     
     with right_column:
-        st_lottie(lottie_stock, height=300, key="stock")
+        st_lottie(lottie_stock, height=300, key="stock")"""
 
 # Kontakt 
 with st.container():
